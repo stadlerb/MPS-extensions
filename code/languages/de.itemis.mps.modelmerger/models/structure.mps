@@ -119,6 +119,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3LbaOBq5mpi" resolve="PropertyStrategy" />
     </node>
+    <node concept="1TJgyj" id="3U13t1JerPE" role="1TKVEi">
+      <property role="IQ2ns" value="4503896291217620330" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="childMerger" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3LbaOBq7Qjh" resolve="ChildStrategy" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7jEe20Buz7J">
     <property role="EcuMT" value="8424607763702362607" />
@@ -206,6 +213,92 @@
     <property role="34LRSv" value="property_r" />
     <property role="3GE5qa" value="property" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="3LbaOBq7Qjh">
+    <property role="EcuMT" value="4344613861721072849" />
+    <property role="TrG5h" value="ChildStrategy" />
+    <property role="3GE5qa" value="child" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3U13t1JdGB8" role="1TKVEi">
+      <property role="IQ2ns" value="4503896291217426888" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="child" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3LbaOBq7QJj" resolve="ChildRefExpression" />
+    </node>
+    <node concept="1TJgyj" id="3U13t1Je7p0" role="1TKVEi">
+      <property role="IQ2ns" value="4503896291217536576" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mergeFunction" />
+      <ref role="20lvS9" node="3U13t1Je7p3" resolve="ChildMergeFunction" />
+    </node>
+    <node concept="1TJgyi" id="3U13t1Jfb29" role="1TKVEl">
+      <property role="IQ2nx" value="4503896291217813641" />
+      <property role="TrG5h" value="direction" />
+      <ref role="AX2Wp" node="3U13t1Jfb1U" resolve="ChildMergeDirection" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3LbaOBq7QJj">
+    <property role="EcuMT" value="4344613861721074643" />
+    <property role="3GE5qa" value="child" />
+    <property role="TrG5h" value="ChildRefExpression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3LbaOBq7QJk" role="PzmwI">
+      <ref role="PrY4T" to="tp25:2epClk4w$j5" resolve="BootstrapAwareMetaObject" />
+    </node>
+    <node concept="1TJgyj" id="3LbaOBq7QJm" role="1TKVEi">
+      <property role="IQ2ns" value="4344613861721074646" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="linkDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3U13t1Je7p3">
+    <property role="EcuMT" value="4503896291217536579" />
+    <property role="TrG5h" value="ChildMergeFunction" />
+    <property role="34LRSv" value="mergeChildren" />
+    <property role="3GE5qa" value="child" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="3U13t1Je7Uk">
+    <property role="EcuMT" value="4503896291217538708" />
+    <property role="TrG5h" value="ChildParamLeft" />
+    <property role="34LRSv" value="child_l" />
+    <property role="3GE5qa" value="child" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="3U13t1Je7Ul">
+    <property role="EcuMT" value="4503896291217538709" />
+    <property role="TrG5h" value="ChildParamRight" />
+    <property role="34LRSv" value="child_r" />
+    <property role="3GE5qa" value="child" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="AxPO7" id="3U13t1Jfb1U">
+    <property role="TrG5h" value="ChildMergeDirection" />
+    <property role="3GE5qa" value="child" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="3U13t1Jfb1V" role="M5hS2">
+      <property role="1uS6qv" value="0" />
+      <property role="1uS6qo" value="Left" />
+    </node>
+    <node concept="M4N5e" id="3U13t1Jfb1W" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="Right" />
+    </node>
+    <node concept="M4N5e" id="3U13t1Jfb1X" role="M5hS2">
+      <property role="1uS6qo" value="Manual" />
+      <property role="1uS6qv" value="2" />
+    </node>
+    <node concept="M4N5e" id="3U13t1Jfb1Y" role="M5hS2">
+      <property role="1uS6qv" value="3" />
+      <property role="1uS6qo" value="auto" />
+    </node>
+    <node concept="M4N5e" id="3U13t1Jfb23" role="M5hS2">
+      <property role="1uS6qo" value="drop" />
+      <property role="1uS6qv" value="4" />
+    </node>
   </node>
 </model>
 
