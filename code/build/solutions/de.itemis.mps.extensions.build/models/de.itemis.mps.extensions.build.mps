@@ -5609,6 +5609,29 @@
             <ref role="3bR37D" node="GuygFg7cRe" resolve="de.itemis.mps.modelmerger" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4$rJLz_TDl1" role="3bR37C">
+          <node concept="3bR9La" id="4$rJLz_TDl2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4$rJLz_TDl3" role="3bR37C">
+          <node concept="3bR9La" id="4$rJLz_TDl4" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4$rJLz_TDl5" role="3bR37C">
+          <node concept="3bR9La" id="4$rJLz_TDl6" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4$rJLz_TDl7" role="3bR37C">
+          <node concept="1Busua" id="4$rJLz_TDl8" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="m$_wf" id="F1NWDqr5lJ" role="3989C9">
