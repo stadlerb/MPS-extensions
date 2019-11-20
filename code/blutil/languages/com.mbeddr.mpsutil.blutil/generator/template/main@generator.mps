@@ -9,6 +9,8 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -261,7 +263,6 @@
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
-        <child id="2456082753387314114" name="generationParameters" index="1OyfA2" />
       </concept>
       <concept id="1177093525992" name="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" flags="lg" index="gft3U">
         <child id="1177093586806" name="templateNode" index="gfFT$" />
@@ -279,7 +280,6 @@
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
         <reference id="1722980698497626483" name="template" index="v9R2y" />
       </concept>
-      <concept id="650531548511911818" name="jetbrains.mps.lang.generator.structure.GeneratorParameterReference" flags="ng" index="xeT_P" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -6790,7 +6790,6 @@
   <node concept="bUwia" id="7xRvYDMGr4J">
     <property role="TrG5h" value="conceptswitch" />
     <property role="3GE5qa" value="conceptswitch" />
-    <node concept="xeT_P" id="2Guc1lY60Hs" role="1OyfA2" />
     <node concept="3aamgX" id="7xRvYDMJ7Fg" role="3acgRq">
       <ref role="30HIoZ" to="hba4:7xRvYDMJ4J0" resolve="ItExpr" />
       <node concept="1Koe21" id="7xRvYDMJ7Gt" role="1lVwrX">
@@ -8889,7 +8888,28 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="5EJ7vKJfwk0" role="jymVt">
+    <node concept="2tJIrI" id="5EJ7vKJfwk0" role="jymVt" />
+    <node concept="3clFb_" id="MYiRvzDuKT" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="map" />
+      <node concept="3uibUv" id="MYiRvzDuKZ" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="MYiRvzDuKV" role="1B3o_S" />
+      <node concept="37vLTG" id="MYiRvzDuKX" role="3clF46">
+        <property role="TrG5h" value="input" />
+        <node concept="3uibUv" id="MYiRvzDuL9" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="MYiRvzDuLh" role="3clF47">
+        <node concept="3cpWs6" id="MYiRvzDZs2" role="3cqZAp">
+          <node concept="10Nm6u" id="MYiRvzDZsx" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="MYiRvzDuLi" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
       <node concept="29HgVG" id="5EJ7vKJfw_M" role="lGtFl">
         <node concept="3NFfHV" id="5EJ7vKJfw_P" role="3NFExx">
           <node concept="3clFbS" id="5EJ7vKJfw_Q" role="2VODD2">
@@ -8905,7 +8925,30 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="5EJ7vKJfwDl" role="jymVt">
+    <node concept="2tJIrI" id="5EJ7vKJfwDl" role="jymVt" />
+    <node concept="3clFb_" id="MYiRvzDXI$" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="reduce" />
+      <node concept="_YKpA" id="MYiRvzDXIE" role="3clF45">
+        <node concept="3uibUv" id="MYiRvzDXIF" role="_ZDj9">
+          <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="MYiRvzDXIA" role="1B3o_S" />
+      <node concept="37vLTG" id="MYiRvzDXIC" role="3clF46">
+        <property role="TrG5h" value="input" />
+        <node concept="3uibUv" id="MYiRvzDXIP" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="MYiRvzDXIZ" role="3clF47">
+        <node concept="3cpWs6" id="MYiRvzDYRm" role="3cqZAp">
+          <node concept="10Nm6u" id="MYiRvzDYSA" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="MYiRvzDXJ0" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
       <node concept="29HgVG" id="5EJ7vKJfwYb" role="lGtFl">
         <node concept="3NFfHV" id="5EJ7vKJfwYe" role="3NFExx">
           <node concept="3clFbS" id="5EJ7vKJfwYf" role="2VODD2">

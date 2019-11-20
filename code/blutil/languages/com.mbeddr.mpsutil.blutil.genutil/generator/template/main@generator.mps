@@ -43,6 +43,10 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -96,8 +100,8 @@
             </node>
           </node>
           <node concept="3clFbS" id="7NuG4bMBzet" role="3clF47">
-            <node concept="3clFbF" id="7NuG4bMBzeu" role="3cqZAp">
-              <node concept="2YIFZM" id="7NuG4bMBzev" role="3clFbG">
+            <node concept="3cpWs6" id="MYiRvzfVZ3" role="3cqZAp">
+              <node concept="2YIFZM" id="7NuG4bMBzev" role="3cqZAk">
                 <ref role="1Pybhc" to="wrkm:3DSLkDUw7Gx" resolve="GeneratorUtil" />
                 <ref role="37wK5l" to="wrkm:3DSLkDUw7Le" resolve="hasBeenExecuted" />
                 <node concept="2OqwBi" id="7NuG4bMBzew" role="37wK5m">
@@ -137,7 +141,7 @@
         <node concept="2YIFZL" id="7NuG4bMBzeG" role="1Koe22">
           <property role="TrG5h" value="baseMappingRuleCondition" />
           <node concept="3Tm1VV" id="7NuG4bMBzeH" role="1B3o_S" />
-          <node concept="10P_77" id="7NuG4bMBzeI" role="3clF45" />
+          <node concept="3cqZAl" id="MYiRvzgcy6" role="3clF45" />
           <node concept="37vLTG" id="7NuG4bMBzeJ" role="3clF46">
             <property role="TrG5h" value="_context" />
             <property role="3TUv4t" value="true" />
@@ -196,8 +200,8 @@
             </node>
           </node>
           <node concept="3clFbS" id="7NuG4bMBzf5" role="3clF47">
-            <node concept="3clFbF" id="7NuG4bMBzf6" role="3cqZAp">
-              <node concept="2YIFZM" id="7NuG4bMBzf7" role="3clFbG">
+            <node concept="3cpWs6" id="MYiRvzfWob" role="3cqZAp">
+              <node concept="2YIFZM" id="7NuG4bMBzf7" role="3cqZAk">
                 <ref role="1Pybhc" to="wrkm:3DSLkDUw7Gx" resolve="GeneratorUtil" />
                 <ref role="37wK5l" to="wrkm:3DSLkDUwhE0" resolve="executeOnce" />
                 <node concept="2OqwBi" id="7NuG4bMBzf8" role="37wK5m">
